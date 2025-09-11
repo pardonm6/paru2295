@@ -9,7 +9,7 @@ _Note that this file is written in **MarkDown** language. A reference is availab
 
 _Here you can include images, like the logo from SU_
 
-![Your dashboard](./assets/project-logo.jpg)
+![Your dashboard](./assets/Screen Shot 2025-09-11 at 18.35.51 PM.png)
 
 ## Introduction
 
@@ -29,7 +29,7 @@ If you are using Mac, you may need to install Xcode. Check the official Streamli
    - [Windows command prompt] `.\env\Scripts\activate.bat` 
    - [in Windows PowerShell] `.\env\Scripts\Activate.ps1`
 3. Make sure that your terminal is in the environment (`env`) not in the global Python installation. The terminal should start with the word `env`
-4. Install required packages `pip install -r ./requirements.txt`
+4. Install required packages ` install -r pip./requirements.txt`
 5. Check that the installation works running `streamlit hello`
 6. Stop the terminal by pressing **Ctrl+C**
 
@@ -56,3 +56,4 @@ Tested on Python 3.12.7 with the following packages:
 ## Contributors
 
 _Add the project's authors, contact information, and links to websites or portfolios._
+pardon

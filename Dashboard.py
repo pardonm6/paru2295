@@ -1,59 +1,84 @@
 import streamlit as st
+import numpy as np
 
 st.set_page_config(
-    page_title="PROHI Dashboard",
-    page_icon="👋",
+    page_title= "Pardy's Dashboard",
+    page_icon=":bar_chart:",
 )
 
 # Sidebar configuration
-st.sidebar.image("./assets/project-logo.jpg",)
+st.sidebar.image("./assets/Screen Shot 2025-09-11 at 18.35.51 PM.png",)
+tab = st.sidebar.radio(
+    "Navigate",
+    ["Home", "Project", "Data"]
+)
 st.sidebar.success("Select a tab above.")
 
 # # Page information
 
-st.write("# Welcome to PROHI Dashboard! 👋")
+# Main content based on selected tab
+if tab == "Home":
+    st.write("# Welcome to Pardy's Dashboard! 👋")
+    st.write("## Aims:")
+    st.markdown("""
+        This dashboard was developed by Pardon to showcase various data visualizations and analyses.
+        It is aimed to provide a proving ground for Github push abd pull skills.
+    """)
 
-st.markdown(
-"""
-    ## Aims
 
-    After completing the course the student should be able to:
-    - explain basic project management methods
-    - be able to account for success factors in Health Informatics projects
-    - understand basic methods and tools in the field of data science and machine learning
-    - explain process models for data mining projects
-    - explain the difference between rule-based methods and machine learning methods
-    - apply basic project management methods
-    - work in an international multidisciplinary project group
-    - independently lead and implement a limited project in health informatics - document the steps in the design of a prototype for a health informatics project
-    - apply the steps in a process model for data mining projects
-    - apply methods from the field of text mining on different types of health informatics problems
-    - explain and argue for their positions regarding the implementation of a health informatics project
-    - explain how to work with sensitive health information in a safe and ethical way.
+elif tab == "Project":
+    st.write("## Project")
+    st.markdown("""
+        The project aims at developing a machine learning model to predict the likelihood of Stroke.
+        The domain area is Health and the project uses a dataset from Kaggle containing various lifestyle and health metrics.
+    """)
 
-"""
-)
+elif tab == "Data":
+    import streamlit as st
+    import pandas as pd
+    import numpy as np
+    import plotly.express as px
 
-# You can also add text right into the web as long comments (""")
-"""
-The final project aims to apply data science concepts and skills on a 
-medical case study that you and your team select from a public data source.
-The project assumes that you bring the technical Python skills from 
-previous courses (*DSHI*: Data Science for Health Informatics), as well as 
-the analytical skills to argue how and why specific techniques could
-enhance the problem domain related to the selected dataset.
-"""
+    @st.cache_data
+    def get_data():
+        df = pd.DataFrame(
+            np.random.randn(50, 20), columns=("col %d" % i for i in range(20))
+        )
+        return df
 
-### UNCOMMENT THE CODE BELOW TO SEE EXAMPLE OF INPUT WIDGETS
+    @st.cache_data
+    def convert_for_download(df):
+        return df.to_csv().encode("utf-8")
 
-# # DATAFRAME MANAGEMENT
-# import numpy as np
+    df = get_data()
+    csv = convert_for_download(df)
 
-# dataframe = np.random.randn(10, 20)
-# st.dataframe(dataframe)
+    st.download_button(
+    label="Download CSV",
+    data=csv,
+    file_name="data.csv",
+    mime="text/csv",
+    icon=":material/download:",
+    )
+    
+    
+    @st.cache_data
+    def get_data():
+        df = pd.DataFrame(
+            np.random.randn(50, 2), columns=["Age", "Stroke risk"]
+        )
+        return df
 
-# # Add a slider to the sidebar:
-# add_slider = st.slider(
-#     'Select a range of values',
-#     0.0, 100.0, (25.0, 75.0)
-# )
+    df = get_data()
+
+    st.write("## Interactive Plot")
+    fig = px.scatter(df, x="Age", y="Stroke risk", title="Stroke Risk Scatter Plot")
+    st.plotly_chart(fig, use_container_width=True)
+
+    st.write("## Aquired Data")
+    st.dataframe(df)
+
+    add_slider = st.slider(
+        'Select a range of values',
+        0.0, 100.0, (25.0, 75.0)
+    )
