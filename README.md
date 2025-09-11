@@ -5,17 +5,22 @@
 The collaborator will edit the line below in GitHub -->
 **Collaborator**:Zipei Yang
 
-_Note that this file is written in **MarkDown** language. A reference is available here: <https://www.markdownguide.org/basic-syntax/>_
-
-_Here you can include images, like the logo from SU_
-
-![Your dashboard](./assets/Screen Shot 2025-09-11 at 18.35.51 PM.png)
+![Dashboard logo ](./assets/Screen Shot 2025-09-11 at 18.35.51 PM.png)
 
 ## Introduction
 
-_This template project will contain a simple interactive web dashboard with Streamlit. Feel free to edit this document as desired_
+_This template project will contain a simple interactive web dashboard with Streamlit. It has a sidebar and the mainpage. The main interactions are within the sidebar. 
+_ ![Screenshots of dashbord]:
+ (./assets/Screen Shot 2025-09-11 at 18.35.51 PM.png)
+ (./assets/Screen Shot 2025-09-11 at 21.06.26 PM.png)
+ (./assets/Screen Shot 2025-09-11 at 21.06.03 PM.png)
 
 ## System description
+_The project has two main Tabs, the Dashboard and the About section.
+The Dashboard has three navigation buttons; Home, Project and Data
+1. Home: This section displays the aims of the project, which in this case are just to showcase the push and pull skills in github.
+2. Project: This section displays what the project is about amd where the dataset is from.
+3. Data: This section displays the actual dataset in use and displays the results
 
 ### Installation of libraries
 
@@ -55,5 +60,4 @@ Tested on Python 3.12.7 with the following packages:
 
 ## Contributors
 
-_Add the project's authors, contact information, and links to websites or portfolios._
-pardon
+_Pardon Runesu: pardonm6@gmail.com, 0764278764
