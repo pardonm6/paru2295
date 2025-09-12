@@ -5,7 +5,7 @@
 The collaborator will edit the line below in GitHub -->
 **Collaborator**:Zipei Yang
 
-![Dashboard logo](./assets/ScreenShot1.png)
+![Dashboard logo](./assets/Screenshot1.png)
 
 ## Introduction
 
