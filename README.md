@@ -13,7 +13,7 @@ _This template project will contain a simple interactive web dashboard with Stre
 _
 
 ![Screenshots of dashbord](./assets/Screenshot1.png)
-![Screenshots of dashbord](./assets/Screen Shot 2025-09-11 at 21.06.26 PM.png)
+![Screenshots of dashbord](./assets/Screenshot3.png)
 ![Screenshots of dashbord](./assets/Screenshot2.png)
 
 ## System description
