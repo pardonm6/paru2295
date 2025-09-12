@@ -10,10 +10,10 @@ The collaborator will edit the line below in GitHub -->
 ## Introduction
 
 _This template project will contain a simple interactive web dashboard with Streamlit. It has a sidebar and the mainpage. The main interactions are within the sidebar. 
-_ ![Screenshots of dashbord]:
- (./assets/Screen Shot 2025-09-11 at 18.35.51 PM.png)
- (./assets/Screen Shot 2025-09-11 at 21.06.26 PM.png)
- (./assets/Screen Shot 2025-09-11 at 21.06.03 PM.png)
+_ 
+![Screenshots of dashbord](./assets/Screen Shot 2025-09-11 at 18.35.51 PM.png)
+![Screenshots of dashbord](./assets/Screen Shot 2025-09-11 at 21.06.26 PM.png)
+![Screenshots of dashbord](./assets/Screen Shot 2025-09-11 at 21.06.03 PM.png)
 
 ## System description
 _The project has two main Tabs, the Dashboard and the About section.
