@@ -9,8 +9,9 @@ The collaborator will edit the line below in GitHub -->
 
 ## Introduction
 
-_This template project will contain a simple interactive web dashboard with Streamlit. It has a sidebar and the mainpage. The main interactions are within the sidebar. 
-_
+_This template project will contain a simple interactive web dashboard with Streamlit. It has a sidebar and the mainpage. The main interactions are within the sidebar.
+ 
+## Screenshots
 
 ![Screenshots of dashbord](./assets/Screenshot1.png)
 ![Screenshots of dashbord](./assets/Screenshot3.png)

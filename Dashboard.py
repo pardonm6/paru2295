@@ -7,7 +7,7 @@ st.set_page_config(
 )
 
 # Sidebar configuration
-st.sidebar.image("./assets/Screen Shot 2025-09-11 at 18.35.51 PM.png",)
+st.sidebar.image("./assets/Screenshot1.png",)
 tab = st.sidebar.radio(
     "Navigate",
     ["Home", "Project", "Data"]
